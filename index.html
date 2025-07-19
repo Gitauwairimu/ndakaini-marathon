@@ -60,11 +60,114 @@
             text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
         }
         
-        .tagline {
+        .tagline-container {
+            background: rgba(41, 187, 137, 0.3); /* Semi-transparent accent color */
+            backdrop-filter: blur(5px); /* Frosted glass effect */
+            padding: 12px 30px;
+            border-radius: 30px;
+            margin-bottom: 20px;
+            border: 2px solid rgba(255,255,255,0.2);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        .tagline-text {
             font-size: 1.8rem;
             font-weight: 600;
-            margin-bottom: 15px;
-            color: var(--accent);
+            color: white;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+            letter-spacing: 1px;
+            position: relative;
+            display: inline-block;
+        }
+
+        .tagline-text::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60%;
+            height: 2px;
+            background: rgba(255,255,255,0.5);
+        }
+
+
+        .marathon-partners {
+    margin-top: 40px;
+    padding-top: 30px;
+    border-top: 1px solid rgba(255,255,255,0.3);
+    position: relative;
+}
+
+.marathon-partners::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 2px;
+    background: var(--accent);
+}
+
+.partners-title {
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.partners-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.partner-logo {
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.partner-logo img {
+    max-height: 100%;
+    max-width: 120px;
+    width: auto;
+    height: auto;
+    filter: brightness(0) invert(1);
+    opacity: 0.8;
+    transition: all 0.3s ease;
+}
+
+.partner-logo:hover img {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+    .partners-grid {
+        gap: 15px;
+    }
+    .partner-logo {
+        height: 40px;
+    }
+    .partner-logo img {
+        max-width: 90px;
+    }
+}
+
+        @media (max-width: 768px) {
+            .tagline-container {
+                padding: 8px 20px;
+            }
+            .tagline-text {
+                font-size: 1.4rem;
+            }
         }
         
         .date {
@@ -430,7 +533,10 @@
             <img src="images/logo.png" alt="Ndakaini Mazingira Sustainability Centre" class="logo-transparent">
         </div>
         <h1>Ndakaini Mazingira Sustainability Centre</h1>
-        <div class="tagline">Save Green, Save Blue</div>
+
+            <div class="tagline-container">
+        <span class="tagline-text">Save Green, Save Blue</span>
+    </div>
         <div class="date">Protecting Nairobi's Water Future Since 1994</div>
         <a href="#get-involved" class="cta-button">Join Our Movement</a>
     </header>
@@ -504,14 +610,40 @@
         </div>
     </section>
 
-    <section class="marathon-highlight">
-        <div class="marathon-content">
-            <h2>Ndakaini Mazingira Half Marathon</h2>
-            <p class="tagline">Our Flagship Annual Event | September 6, 2025</p>
-            <p>Join thousands of runners in this unique event that combines athletic challenge with environmental conservation, directly funding our watershed protection programs.</p>
-            <a href="https://apps.little.africa/events/ndakaini-mazingira-cross-country-01-event-2025" class="cta-button">Register Now</a>
+<section class="marathon-highlight">
+    <div class="marathon-content">
+        <h2>Ndakaini Mazingira Half Marathon</h2>
+        <p class="tagline">Our Flagship Annual Event | September 6, 2025</p>
+        <p>Join thousands of runners in this unique event that combines athletic challenge with environmental conservation, directly funding our watershed protection programs.</p>
+        <a href="https://apps.little.africa/events/ndakaini-mazingira-cross-country-01-event-2025" class="cta-button">Register Now</a>
+        
+        <!-- Partner Logos Inside the Highlight Section -->
+        <div class="marathon-partners">
+            <h3 class="partners-title">Proudly Supported By</h3>
+            <div class="partners-grid">
+                <div class="partner-logo">
+                    <img src="images/partners/Coke-company-logo-black.svg" alt="Ministry of Sports">
+                </div>
+                <div class="partner-logo">
+                    <img src="images/partners/kakuzi-logo.svg" alt="Kenya Wildlife Service">
+                </div>
+                <div class="partner-logo">
+                    <img src="images/partners/pavicon.png" alt="Athletics Kenya">
+                </div>
+                <div class="partner-logo">
+                    <img src="images/partners/Safaricom-Logo.wine.png" alt="Safaricom">
+                </div>
+                <div class="partner-logo">
+                    <img src="images/partners/del-monte-seeklogo.png" alt="Ministry of Sports">
+                </div>
+                <div class="partner-logo">
+                    <img src="images/partners/booch-logo.png" alt="Ministry of Sports">
+                </div>
+            </div>
         </div>
-    </section>
+    </div>
+</section>
+
 
     <div class="travel-guide">
         <h2 class="section-title">Getting to Ndakaini Dam</h2>

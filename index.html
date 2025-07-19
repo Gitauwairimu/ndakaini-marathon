@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ndakaini Half Marathon 2025 | Save Green, Save Blue</title>
+    <title>Ndakaini Mazingira Sustainability Centre | Save Green, Save Blue</title>
     <style>
         :root {
             --primary: #1E6F5C;
@@ -23,8 +23,8 @@
         }
         
         header {
-            background: linear-gradient(rgba(30, 111, 92, 0.7), rgba(58, 124, 165, 0.7)), 
-                        url('https://cdn.shoplightspeed.com/shops/622630/files/69760926/whatsapp-image-2025-04-14-at-115042-am-1.jpg');
+            background: linear-gradient(rgba(30, 111, 92, 0.4), rgba(58, 124, 165, 0.4)), 
+                        url('images/ndakaini.webp');
             background-size: cover;
             background-position: center;
             height: 100vh;
@@ -38,22 +38,15 @@
         }
         
         .logo-container-transparent {
-            /* No background needed for transparent logo */
-            padding: 10px 0; /* Adjust spacing as needed */
+            padding: 10px 0;
             margin-bottom: 20px;
         }
 
         .logo-transparent {
             height: auto;
-            width: 180px; /* Or your preferred size */
+            width: 220px;
             max-width: 100%;
-            /* Add subtle effects */
             filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));
-            transition: transform 0.3s ease;
-        }
-
-        .logo-transparent:hover {
-            transform: scale(1.03);
         }
         
         h1, h2, h3 {
@@ -186,14 +179,14 @@
             transform: scale(1.05);
         }
         
-        .race-categories {
+        .programs-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 30px;
             margin-top: 50px;
         }
         
-        .category {
+        .program-card {
             background: var(--light);
             border-radius: 10px;
             padding: 40px 30px;
@@ -203,21 +196,15 @@
             border-top: 5px solid var(--accent);
         }
         
-        .category:hover {
+        .program-card:hover {
             transform: translateY(-10px);
             box-shadow: 0 15px 30px rgba(0,0,0,0.15);
         }
         
-        .category-icon {
+        .program-icon {
             font-size: 3.5rem;
             color: var(--water-blue);
             margin-bottom: 25px;
-        }
-        
-        .category h3 {
-            color: var(--primary);
-            margin-bottom: 20px;
-            font-size: 1.8rem;
         }
         
         .stats {
@@ -250,112 +237,104 @@
             opacity: 0.9;
         }
 
+        /* Travel Guide Section */
+        .travel-guide {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
 
+        .route-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin-top: 20px;
+        }
 
+        .route-stats {
+            background: #f8fafc;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
 
+        .route-map {
+            background: #e6f5f1;
+            border-radius: 8px;
+            overflow: hidden;
+            min-height: 400px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
 
+        .distance-list {
+            list-style: none;
+            padding: 0;
+            margin: 20px 0;
+        }
 
+        .distance-list li {
+            padding: 12px 0;
+            border-bottom: 1px dashed #e2e8f0;
+            display: flex;
+            justify-content: space-between;
+        }
 
-.travel-guide {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 30px 20px;
-  font-family: 'Segoe UI', sans-serif;
-}
+        .distance-list .leg {
+            color: #1E6F5C;
+            font-weight: 600;
+        }
 
-.route-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 30px;
-  margin-top: 20px;
-}
+        .distance-list .km {
+            font-weight: 500;
+        }
 
-.route-stats {
-  background: #f8fafc;
-  padding: 25px;
-  border-radius: 8px;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-}
+        .distance-list .total {
+            padding-top: 15px;
+            border-top: 2px solid #1E6F5C;
+            margin-top: 10px;
+            font-size: 1.1em;
+        }
 
-.route-map {
-  background: #e6f5f1;
-  border-radius: 8px;
-  overflow: hidden;
-  min-height: 400px;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-}
+        .drive-time {
+            color: #3A7CA5;
+            font-weight: 500;
+            margin: 20px 0;
+        }
 
-.distance-list {
-  list-style: none;
-  padding: 0;
-  margin: 20px 0;
-}
+        .route-tips {
+            background: #E6F5F1;
+            padding: 15px;
+            border-radius: 6px;
+            margin-top: 25px;
+        }
 
-.distance-list li {
-  padding: 12px 0;
-  border-bottom: 1px dashed #e2e8f0;
-  display: flex;
-  justify-content: space-between;
-}
+        /* Marathon Section */
+        .marathon-highlight {
+            background: url('https://images.unsplash.com/photo-1543351611-58f69d7c1781?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+            padding: 100px 0;
+            position: relative;
+            color: white;
+            text-align: center;
+        }
 
-.distance-list .leg {
-  color: #1E6F5C;
-  font-weight: 600;
-}
+        .marathon-highlight::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(30, 111, 92, 0.5);
+        }
 
-.distance-list .km {
-  font-weight: 500;
-}
+        .marathon-content {
+            position: relative;
+            max-width: 800px;
+            margin: 0 auto;
+        }
 
-.distance-list .total {
-  padding-top: 15px;
-  border-top: 2px solid #1E6F5C;
-  margin-top: 10px;
-  font-size: 1.1em;
-}
-
-.drive-time {
-  color: #3A7CA5;
-  font-weight: 500;
-  margin: 20px 0;
-}
-
-.route-tips {
-  background: #E6F5F1;
-  padding: 15px;
-  border-radius: 6px;
-  margin-top: 25px;
-}
-
-.route-tips h4 {
-  margin-top: 0;
-  color: #1E6F5C;
-}
-
-.route-tips ul {
-  padding-left: 20px;
-  color: #4a5568;
-}
-
-@media (max-width: 768px) {
-  .route-container {
-    grid-template-columns: 1fr;
-  }
-  
-  .route-map {
-    min-height: 300px;
-  }
-}
-
-
-
-
-
-
-
-
-
-        
         footer {
             background: var(--primary);
             color: var(--light);
@@ -410,16 +389,7 @@
             background: rgba(255,255,255,0.2);
             transform: translateY(-3px);
         }
-        
-        .water-fact {
-            font-style: italic;
-            margin: 40px auto;
-            padding: 20px;
-            border-left: 4px solid var(--accent);
-            background: rgba(255,255,255,0.1);
-            max-width: 800px;
-        }
-        
+
         @media (max-width: 768px) {
             h1 {
                 font-size: 2.5rem;
@@ -433,16 +403,21 @@
                 font-size: 1.5rem;
             }
             
-            .about-content {
+            .about-content, .route-container {
                 flex-direction: column;
+                grid-template-columns: 1fr;
             }
             
-            .logo {
-                height: 80px;
+            .logo-transparent {
+                width: 180px;
             }
             
             .section-title {
                 font-size: 2.2rem;
+            }
+
+            .route-map {
+                min-height: 300px;
             }
         }
     </style>
@@ -452,13 +427,12 @@
 <body>
     <header>
         <div class="logo-container-transparent">
-            <img src="images/logo.png" alt="Ndakaini Mazingira Half Marathon Official Logo" class="logo-transparent" width="180" height="auto">
+            <img src="images/logo.png" alt="Ndakaini Mazingira Sustainability Centre" class="logo-transparent">
         </div>
-        <h1>Ndakaini Half Marathon 2025</h1>
+        <h1>Ndakaini Mazingira Sustainability Centre</h1>
         <div class="tagline">Save Green, Save Blue</div>
-        <div class="date">September 6, 2025</div>
-        <p>Run for Water Conservation at Ndakaini Dam - Nairobi's Primary Water Source</p>
-        <a href="https://apps.little.africa/events/ndakaini-mazingira-cross-country-01-event-2025" class="cta-button">Register Now</a>
+        <div class="date">Protecting Nairobi's Water Future Since 1994</div>
+        <a href="#get-involved" class="cta-button">Join Our Movement</a>
     </header>
     
     <section class="about">
@@ -466,14 +440,14 @@
             <h2 class="section-title">Our Conservation Mission</h2>
             <div class="about-content">
                 <div class="about-text">
-                    <p><i class="fas fa-water water-drop-icon"></i> The Ndakaini Dam provides over 80% of Nairobi's water supply. This marathon directly supports conservation efforts to protect this vital resource for current and future generations.</p>
+                    <p><i class="fas fa-water water-drop-icon"></i> The Ndakaini Dam watershed provides over 85% of Nairobi's water supply. Our centre leads community-driven initiatives to protect this vital resource through education, reforestation, and sustainable development.</p>
                     
-                    <p><i class="fas fa-tree water-drop-icon"></i> Every registration contributes to tree planting initiatives in the Aberdare watershed, helping to maintain the natural water cycle and prevent soil erosion that silts our reservoirs.</p>
+                    <p><i class="fas fa-tree water-drop-icon"></i> We've planted over 2 million trees in the Aberdare ecosystem, maintaining the natural water cycle and preventing soil erosion that silts our reservoirs.</p>
                     
-                    <p><i class="fas fa-tint water-drop-icon"></i> Your participation helps fund community education programs on water conservation, sustainable farming practices, and alternative energy sources to reduce pressure on our forests.</p>
+                    <p><i class="fas fa-tint water-drop-icon"></i> Our programs train local communities in water conservation, sustainable farming, and alternative energy to reduce pressure on forests.</p>
                     
                     <div class="water-fact">
-                        "For every kilometer you run, we pledge to protect 1,000 liters of clean water through our conservation programs."
+                        "Every initiative at our centre contributes directly to safeguarding Nairobi's water security for future generations."
                     </div>
                 </div>
                 <div class="about-image">
@@ -489,7 +463,7 @@
             <div class="stats-grid">
                 <div class="stat-item">
                     <div class="stat-number">15+</div>
-                    <div class="stat-label">Years of Conservation</div>
+                    <div class="stat-label">Years of Service</div>
                 </div>
                 <div class="stat-item">
                     <div class="stat-number">2M+</div>
@@ -506,83 +480,107 @@
             </div>
         </div>
     </section>
-    
+
     <section class="container">
-        <h2 class="section-title">Race Categories</h2>
-        <div class="race-categories">
-            <div class="category">
-                <div class="category-icon"><i class="fas fa-mountain"></i></div>
-                <h3>Half Marathon (21km)</h3>
-                <p>Challenge yourself on our flagship 21km course through Ndakaini's beautiful terrain. Each registration protects 21,000 liters of water.</p>
+        <h2 class="section-title">Our Key Programs</h2>
+        <div class="programs-grid">
+            <div class="program-card">
+                <div class="program-icon"><i class="fas fa-recycle"></i></div>
+                <h3>Sustainability Centre</h3>
+                <p>Establishing a hub that repurposes plastic waste into useful products while promoting circular economy practices in the local community.</p>
             </div>
-            <div class="category">
-                <div class="category-icon"><i class="fas fa-running"></i></div>
-                <h3>10km Run</h3>
-                <p>The perfect balance of challenge and enjoyment. Your participation helps conserve 10,000 liters of Nairobi's water supply.</p>
+            
+            <div class="program-card">
+                <div class="program-icon"><i class="fas fa-hand-holding-water"></i></div>
+                <h3>Environmental Stewardship</h3>
+                <p>Championing environmental stewardship by empowering communities to restore, protect, and sustain their ecosystems through education, innovation, and collaborative action</p>
             </div>
-            <div class="category">
-                <div class="category-icon"><i class="fas fa-users"></i></div>
-                <h3>5km Green Walk</h3>
-                <p>Family-friendly walk through stunning landscapes. Each participant funds the planting of 5 native tree seedlings.</p>
+            
+            <div class="program-card">
+                <div class="program-icon"><i class="fas fa-running"></i></div>
+                <h3>Sports for Conservation</h3>
+                <p>We use events like the Ndakaini Mazingira Half Marathon to raise awareness and rally communities around environmental causes through sport and fitness.</p>
             </div>
         </div>
     </section>
-    
-    <section class="container" style="text-align: center; padding: 100px 20px;">
-        <h2 class="section-title">Every Step Makes a Difference</h2>
-        <p style="font-size: 1.2rem; max-width: 800px; margin: 0 auto 40px;">By joining the Ndakaini Half Marathon, you're not just running a race - you're helping safeguard Nairobi's water future. Our unique "Run for Water" initiative converts every kilometer you run into tangible conservation action.</p>
-        <a href="https://apps.little.africa/events/ndakaini-mazingira-cross-country-01-event-2025" class="cta-button">Join the Conservation Movement</a>
+
+    <section class="marathon-highlight">
+        <div class="marathon-content">
+            <h2>Ndakaini Mazingira Half Marathon</h2>
+            <p class="tagline">Our Flagship Annual Event | September 6, 2025</p>
+            <p>Join thousands of runners in this unique event that combines athletic challenge with environmental conservation, directly funding our watershed protection programs.</p>
+            <a href="https://apps.little.africa/events/ndakaini-mazingira-cross-country-01-event-2025" class="cta-button">Register Now</a>
+        </div>
     </section>
-    
-<div class="travel-guide">
-  <h2>Getting to Ndakaini Dam</h2>
-  <div class="route-container">
-    <!-- First Column - Route Stats -->
-    <div class="route-stats">
-      <h3>Route Breakdown</h3>
-      <ul class="distance-list">
-        <li><span class="leg">Leg 1:</span> Nairobi → Thika (Blue Posts Hotel) <span class="km"> 45 km</span></li>
-        <li><span class="leg">Leg 2:</span> Thika → Gatanga Centre <span class="km">16 km</span></li>
-        <li><span class="leg">Leg 3:</span> Gatanga → Ndakaini <span class="km">13 km</span></li>
-        <li class="total"><strong>Total Distance:</strong> <strong>74 km</strong></li>
-      </ul>
-      <p class="drive-time">Estimated drive time: 2-2.5 hours</p>
-      <div class="route-tips">
-        <h4>Travel Tips:</h4>
-        <ul>
-          <li>All roads are tarmacked</li>
-          <li>Best departure time: 6:00-7:00 AM</li>
-          <li>Last fuel station at Thika</li>
-        </ul>
-      </div>
+
+    <div class="travel-guide">
+        <h2 class="section-title">Getting to Ndakaini Dam</h2>
+        <div class="route-container">
+            <div class="route-stats">
+                <h3>Route Breakdown</h3>
+                <ul class="distance-list">
+                    <li><span class="leg">Leg 1:</span> Nairobi → Thika (Blue Posts Hotel) <span class="km">45 km</span></li>
+                    <li><span class="leg">Leg 2:</span> Thika → Gatanga Centre <span class="km">16 km</span></li>
+                    <li><span class="leg">Leg 3:</span> Gatanga → Ndakaini <span class="km">13 km</span></li>
+                    <li class="total"><strong>Total Distance:</strong> <strong>74 km</strong></li>
+                </ul>
+                <p class="drive-time">Estimated drive time: 2-2.5 hours</p>
+                <div class="route-tips">
+                    <h4>Travel Tips:</h4>
+                    <ul>
+                        <li>All roads are tarmacked</li>
+                        <li>Best departure time: 6:00-7:00 AM</li>
+                        <li>Last fuel station at Thika</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="route-map">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d3989.013943410057!2d36.82731431475375!3d-1.045579235644396!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x182f1172d84d49a7%3A0xf7cf0254b297924c!2sNairobi!3m2!1d-1.2920659!2d36.821946199999996!4m5!1s0x182f3dac3cbd3c8b%3A0x9e5e3b1b45194f3c!2sNdakaini+Dam!3m2!1d-0.883333!2d36.866667!5e0!3m2!1sen!2ske!4v1620000000000!5m2!1sen!2ske"
+                    width="100%"
+                    height="100%"
+                    style="border:0;"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
     </div>
 
-    <!-- Second Column - Map -->
-    <div class="route-map">
-  <iframe 
-    src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d3989.013943410057!2d36.82731431475375!3d-1.045579235644396!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x182f1172d84d49a7%3A0xf7cf0254b297924c!2sNairobi!3m2!1d-1.2920659!2d36.821946199999996!4m5!1s0x182f3dac3cbd3c8b%3A0x9e5e3b1b45194f3c!2sNdakaini+Dam!3m2!1d-0.883333!2d36.866667!5e0!3m2!1sen!2ske!4v1620000000000!5m2!1sen!2ske"
-    width="100%"
-    height="100%"
-    style="border:0;"
-    allowfullscreen=""
-    loading="lazy"
-    referrerpolicy="no-referrer-when-downgrade">
-  </iframe>
-</div>
-  </div>
-</div>
-
-
-
-
-
+    <section id="get-involved" class="container">
+        <h2 class="section-title">Join Our Movement</h2>
+        <div class="programs-grid">
+            <div class="program-card">
+                <div class="program-icon"><i class="fas fa-hands-helping"></i></div>
+                <h3>Volunteer</h3>
+                <p>Help with tree planting, education programs, or event organization.</p>
+                <a href="#" class="cta-button" style="padding: 10px 20px; font-size: 1rem;">Learn More</a>
+            </div>
+            
+            <div class="program-card">
+                <div class="program-icon"><i class="fas fa-donate"></i></div>
+                <h3>Donate</h3>
+                <p>Support our conservation work financially.</p>
+                <a href="#" class="cta-button" style="padding: 10px 20px; font-size: 1rem;">Donate Now</a>
+            </div>
+            
+            <div class="program-card">
+                <div class="program-icon"><i class="fas fa-handshake"></i></div>
+                <h3>Partner</h3>
+                <p>Corporate and organizational collaborations.</p>
+                <a href="#" class="cta-button" style="padding: 10px 20px; font-size: 1rem;">Partner With Us</a>
+            </div>
+        </div>
+    </section>
 
     <footer>
         <div class="footer-wave"></div>
         <div class="container">
             <div class="contact-info">
-                <p>© 2025 Ndakaini Mazingira Half Marathon. All Rights Reserved.</p>
-                <p>Email: <a href="mailto:ndakainimazingirahalfmarathon@gmail.com">ndakainimazingirahalfmarathon@gmail.com</a></p>
+                <p>© 2025 Ndakaini Mazingira Sustainability Centre. All Rights Reserved.</p>
+                <p>Email: <a href="mailto:info@ndakainimazingira.org">info@ndakainimazingira.org</a></p>
                 <p>Phone: +254 723 644 899</p>
             </div>
             <div class="social-links">

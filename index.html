@@ -96,6 +96,37 @@
 
 
 
+    .qr-code-container {
+        margin-top: 30px;
+        text-align: center;
+    }
+    
+    .qr-code-container p {
+        margin-bottom: 10px;
+        font-size: 0.9rem;
+        color: var(--text);
+    }
+    
+    .qr-code-image {
+        width: 250px; /* Adjust this value to your preference */
+        height: auto;
+        display: block;
+        margin: 0 auto;
+        border: 1px solid #e2e8f0;
+        padding: 10px;
+        background: white;
+    }
+    
+    @media (max-width: 768px) {
+        .qr-code-image {
+            width: 120px;
+        }
+    }
+
+
+
+
+
 
 
 
@@ -726,11 +757,18 @@
                     <i class="fas fa-calendar-alt"></i>
                     <strong>September 6th, 2025</strong> at Ndakaini Dam
                 </div>
+
+
+                <div class="qr-code-container">
+                    <p>Scan to register:</p>
+                    <img src="images/qrcode.png" alt="Registration QR Code" class="qr-code-image">
+                </div>
+
             </div>
             
             <!-- Right Column - Image -->
             <div class="about-image">
-                <img src="images/NdakainiMainposter.jpg" alt="Ndakaini Dam Conservation Area">
+                <img src="images/NdakainiMainposter.jpg" alt="Ndakaini Main Event Poster">
             </div>
         </div>
     </div>
@@ -778,7 +816,7 @@
         
         <div class="call-to-action">
             <p>Be part of our journey from the beginning</p>
-            <a href="#get-involved" class="cta-button">Join Our Launch</a>
+            <a href="#run" class="cta-button">Join Our Launch</a>
         </div>
     </div>
 </section>
@@ -810,7 +848,7 @@
 
 
 
-<section class="marathon-highlight">
+<section id="run" class="marathon-highlight">
     <div class="marathon-content">
         <h2>Ndakaini Mazingira Run</h2>
         <p class="tagline">Our Flagship Annual Event | September 6, 2025</p>

@@ -43,20 +43,30 @@
             text-align: center;
             color: var(--light);
             padding: 0 20px;
+            padding: 20px; /* Add some padding all around */
+            justify-content: flex-start; /* Start content from top */
+            padding-top: 40px; /* Add more top padding */
         }
         
         .logo-container-transparent {
             padding: 10px 0;
             margin-bottom: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
         }
 
-        .logo-transparent {
-            height: auto;
-            width: 220px;
-            max-width: 100%;
-            filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));
-        }
+   
         
+        .logo-transparent {
+            max-height: 120px; /* Set a maximum height */
+            width: auto; /* Let width adjust proportionally */
+            max-width: 100%; /* Ensure it doesn't overflow container */
+            filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));
+            object-fit: contain; /* Ensures entire image is visible */
+        }
+
         h1, h2, h3 {
             font-family: 'Montserrat', sans-serif;
             font-weight: 700;
@@ -839,6 +849,11 @@
             
             .logo-transparent {
                 width: 180px;
+                max-height: 100px; /* Slightly smaller on mobile */
+            }
+
+            header {
+                padding-top: 20px; /* Less top padding on mobile */
             }
             
             .section-title {
@@ -856,6 +871,7 @@
 <body>
     <header>
         <div class="logo-container-transparent">
+            <img src="images/logo.jpeg" alt="Ndakaini Mazingira Sustainability Village" class="logo-transparent">
             <!-- <img src="images/logo.png" alt="Ndakaini Mazingira Sustainability Village" class="logo-transparent"> -->
         </div>
         <h1>Mazingira Sustainability Village</h1>
@@ -1041,6 +1057,18 @@
                 <!-- <div class="carousel-slide active">
                     <img src="images/gallery/NdakainiMainposter.jpg" alt="Sustainability event photo 1">
                 </div> -->
+                <div class="carousel-slide">
+                    <img src="images/gallery/partnerrunbeyond.jpeg" alt="Partner Run Beyond">
+                </div>
+                <div class="carousel-slide">
+                    <img src="images/gallery/partnerpavicon.jpeg" alt="Patrner Pavicon">
+                </div>
+                <div class="carousel-slide">
+                    <img src="images/gallery/partnerkakuzi.jpeg" alt="Kakuzi Partner">
+                </div>
+                <div class="carousel-slide">
+                    <img src="images/gallery/parnercoke.jpeg" alt="Coke Partner">
+                </div>
                 <div class="carousel-slide">
                     <img src="images/gallery/KEPRO SPONSOR.jpg" alt="Sustainability event photo 2">
                 </div>
